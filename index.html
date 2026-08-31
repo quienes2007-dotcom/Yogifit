@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Proyecto EPS 10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 1. ENCABEZADO -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Turnos</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. PORTADA PRINCIPAL (HERO) -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Bienvenido a Yogi Fit</h1>
+                <p>Silencia tu mente, deja que tu cuerpo hable.</p>
+                <button class="btn-principal" id="btn-reserva">Reservá tu turno</button>
+            </div>
+        </section>
+
+        <!-- 3. BLOQUE DE 4 TARJETAS -->
+        <section id="servicios" class="servicios">
+            <h2>Nuestros Servicios</h2>
+            <!-- Esta grilla después se va a llenar sola con la Base de Datos -->
+            <div class="grilla-tarjetas">
+
+                <article class="tarjeta">
+                    <h3>Practica de posturas físicas</h3>
+                    <p>La práctica de posturas físicas no es solo ejercicio; es un sistema de alineación consciente que
+                        busca el equilibrio entre la fuerza y la flexibilidad.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Ejercicios de respiracion</h3>
+                    <p>El control de la respiración es el puente entre el cuerpo y la mente. Es la herramienta más
+                        rápida y efectiva para regular el sistema nervioso y gestionar la energía vital.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Meditación</h3>
+                    <p>Es el "entrenamiento" donde dedicás un tiempo específico para enfocar la mente, usar un mantra o
+                        seguir la respiración con el fin de alcanzar un estado de claridad o calma.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Principiantes</h3>
+                    <p>El yoga para principiantes es una práctica suave y accesible que conecta cuerpo, respiración y
+                        mente, ideal para mejorar flexibilidad y reducir estrés sin necesidad de experiencia previa</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 4. BLOQUE INFORMATIVO Y FORMULARIO -->
+        <section id="contacto" class="contacto-doble">
+            <div class="info-bloque">
+                <h2>Información y Horarios</h2>
+                <p><strong>Lunes a Viernes:</strong> 09:00 a 20:00 hs</p>
+                <p><strong>Sábados:</strong> 10:00 a 14:00 hs</p>
+                <p>📍 Lomas de Zamora, Buenos Aires</p>
+                <button class="btn-secundario" id="btn-ver-mas">Ver más info</button>
+            </div>
+            <!-- Este formulario es el protagonista de la Unidad 2 y 5 -->
+            <div class="form-bloque">
+                <form id="form-registro" class="formulario">
+                    <div class="form-group">
+                        <label for="Servicios">Servicio</label>
+                        <select id="Servicios">
+                            <option value="Practicas de postura fisicas">Prácticas de posturas</option>
+                            <option value="Ejercicios de respiracion">Ejercicios de respiración</option>
+                            <option value="Meditacion">Meditación</option>
+                            <option value="principiantes">Pricipiantes</option>
+                        </select>
+                    </div>
+                    <div class="from-group">
+                        <label for="Fecha">Fecha</label>
+                        <input type="date" id="Fecha" placeholder="dd/mm/aaaa">
+                    </div>
+                    <div class="from-group">
+                        <label for="Horario"> Horario</label>
+                        <select id="Horario">
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                        </select>
+                    </div>
+                    <div class="from-group">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" id="Nombre" placeholder="Nombre completo">
+                    </div>
+                    <div class="from-group">
+                        <label for="Nombre">Apellido</label>
+                        <input type="text" id="Apellido" placeholder="Apellido completo">
+                    </div>
+                    <div class="from-group">
+                        <label for="Tel">Teléfono</label>
+                        <input type="Tel" id="Telefono" placeholder="Número de teléfono">
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <span class="icon">📅</span> Solicitar turno
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- 5. PIE DE PÁGINA -->
+    <footer class="footer">
+        <p> 2026 Nombre de tu Empresa. Todos los derechos reservados.</p>
+        <p>Desarrollado por la Software Factory EPS 10.</p>
+    </footer>
+    </section>
+    </div>
+</body>
+
+</html>

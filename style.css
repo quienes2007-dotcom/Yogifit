@@ -1,0 +1,206 @@
+/* =========================================
+1. VARIABLES GLOBALES (El panel de control)
+Cambien los colores acá según su proyecto
+========================================= */
+:root {
+    --color-principal: #3b0539;     /* Color fuerte para botones y menú */
+    --color-secundario: #f4f4f4;     /* Color suave para fondos de secciones */
+    --color-texto: #333333;
+    --color-fondo: #ffffff;
+    --fuente-base: Arial, Helvetica, sans-serif;
+}
+
+/* =========================================
+2. RESETEO BÁSICO (Para limpiar la mugre del navegador)
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-base);
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    line-height: 1.6;
+}
+
+/* =========================================
+3. ENCABEZADO Y MENÚ (Flexbox)
+========================================= */
+.header {
+    background-color: var(--color-principal);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.nav a:hover {
+    opacity: 0.8;
+}
+
+/* =========================================
+4. PORTADA / HERO
+========================================= */
+.hero {
+    /* Si quieren imagen de fondo la ponen acá */
+    background-image: url(img/12345678.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #cccccc;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* =========================================
+5. TARJETAS DE SERVICIOS (CSS Grid)
+========================================= */
+.servicios {
+    padding: 4rem 5%;
+    text-align: center;
+    background-color: var(--color-secundario);
+}
+
+.grilla-tarjetas {
+    display: grid;     /* Magia pura: se acomodan solas si la pantalla es chica o grande */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tarjeta {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(5px);     /* Efecto de saltito al pasar el mouse */
+}
+
+/* =========================================
+6. SECCIÓN CONTACTO (Doble columna con Flexbox)
+========================================= */
+.contacto-doble {
+    display: flex;
+    flex-wrap: wrap;     /* Si no entra, se va para abajo */
+    padding: 4rem 5%;
+    gap: 2rem;
+}
+
+.info-bloque, .form-bloque {
+    flex: 1;
+    min-width: 300px;
+    padding: 2rem;
+    background: var(--color-secundario);
+    border-radius: 8px;
+    gap: 8rem;
+}
+
+/* ESTILOS DEL FORMULARIO */
+label { /*textos*/
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    color: #380b38;
+    text-transform: uppercase;
+} 
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.formulario input, .formulario select {
+    width: 100%;
+    padding: 8px;
+    background-color: #212529;
+    border: 2px solid #4d1f46;
+    color: #797979;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    appearance: none;
+    transition: border-color 0.2s;
+}
+
+/* =========================================
+7. BOTONES
+========================================= */
+.btn-principal {
+    background-color: var(--color-principal);
+    color: rgb(213, 142, 223);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #5e3856de;
+    color: #1f1e1e;
+    border: none;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #580446;
+    color: #cccccc;
+}
+
+/* =========================================
+8. PIE DE PÁGINA
+========================================= */
+.footer {
+    background-color: #222222;
+    color: rgb(255, 163, 227);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+
+
+
